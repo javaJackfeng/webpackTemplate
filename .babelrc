@@ -1,0 +1,28 @@
+{
+    "presets": [
+        [
+            "@babel/preset-env",
+            {
+                "useBuiltIns": "usage",
+                "corejs": "3.26",
+                "targets": "> 0.25%, not dead" 
+            }
+        ],
+        "@babel/preset-react",
+        "@babel/preset-typescript"
+    ],
+    "plugins": [
+        "@babel/plugin-transform-runtime",
+        "@babel/proposal-class-properties",
+        "@babel/proposal-object-rest-spread",
+        [
+            "import",
+            {
+                "libraryName": "antd",
+                "libraryDirectory": "lib",
+                "style": true
+            },
+            "antd"
+        ]
+    ]
+}
